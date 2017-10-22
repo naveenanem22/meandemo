@@ -3,7 +3,7 @@ var router = express.Router();
 var mongojs = require('mongojs');
 var db = mongojs('mongodb://naveen:password@ds153113.mlab.com:53113/mytasklist_nav',['tasks']);
 
-//Fetch tasks
+//Fetch tasks modified
 router.get('/tasks', function(req,res,next){
     db.tasks.find(function(err,tasks){
         if(err){
