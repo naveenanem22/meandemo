@@ -6,7 +6,6 @@ client/LICENSE
 client/README.md
 client/bs-config.e2e.json
 client/bs-config.json
-client/e2e/
 client/karma-test-shim.js
 client/karma.conf.js
 client/non-essential-files.osx.txt
