@@ -11,4 +11,5 @@ client/karma.conf.js
 client/non-essential-files.osx.txt
 client/non-essential-files.txt
 client/protractor.config.js
+npm-debug.log
 
