@@ -50,7 +50,16 @@ We've captured many of the most useful commands in npm scripts defined in the `p
 
 * `nodemon` - This command should be run from the project's root dir(MEANDEMO). This runs the server in watch mode and checks for any changes in the source code to compile and deploy immediately. 
 
-### File path information
+### Install bower js for frontend module dependency management
+* `npm install -g bower` - This command will install bower.js globally
+* `bower -version` - This should return the version if bower is installed globally and system's path is set
+* Create a file called ".bowerrc" with a directory entry as below. Then open commandprompt at the current directory which contains the .bowerrc file. Then run `bower install -bootstrap --save` to install bootstrap and its dependencies under the below folder inside current directory.
+   {directory: client/bower_components}
+* `bower uninstall bootstrap` - This should remove bootstrap libraries from bower_components
+
+
+### File path reference. The following path guidelines applicable for web.
 * '/' represents root of frontend application. In this case it is 'client' dir. Means
 *  / = https://localhost:3000/client 
 *  /src/assets/styles.css = https://localhost:3000/client/src/assets/styles.css
+
