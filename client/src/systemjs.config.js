@@ -4,6 +4,7 @@
  */
 (function (global) {
   System.config({
+    
     paths: {
       // paths serve as alias
       'npm:': 'node_modules/'
@@ -34,6 +35,7 @@
         meta: {
           './*.js': {
             loader: '/src/systemjs-angular-loader.js'
+            
           }
         }
       },

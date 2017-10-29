@@ -1,10 +1,6 @@
 # MEAN stack based sample Web application
 
-
-
-
 ## Prerequisites
-
 Node.js and npm are essential to run and deploy the applicaiton and to continue further.
     
 <a href="https://docs.npmjs.com/getting-started/installing-node" target="_blank" title="Installing Node.js and updating npm">
@@ -63,3 +59,6 @@ We've captured many of the most useful commands in npm scripts defined in the `p
 *  / = https://localhost:3000/client 
 *  /src/assets/styles.css = https://localhost:3000/client/src/assets/styles.css
 
+
+### Current Issues:
+* Angular loader or typescript not loading the files with the paths => ../ in the import statements

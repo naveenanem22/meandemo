@@ -33,20 +33,25 @@ router.get('/task/:id', function(req,res,next){
 
 
 //Create task
-router.post('/task',function(req,res,next){
+router.post('/task',function(req,res,next){    
     var task = req.body;
-    if(!task.title || (task.isDone + '')){
+    
+    if(!task.title || !(task.isDone + '')){            
         res.status(400);
         res.json({
             "Error" : "Bad request"
         });
     }
-    else {
-        db.tasks.save(task,function(err,res){
-            if(err)
-            res.send(err);
-            else
-            res.json(task);
+    else {        
+        db.tasks.save(task,function(err,task){
+            if(err){                
+                res.send(err);
+            }
+            
+            else{                
+                res.json(task);
+            }
+            
         });
 
     }
@@ -61,7 +66,7 @@ router.delete('/task/:id', function(req,res,next){
         }
         if(task==null)
         res.send("Error");
-        res.json(task.titl);
+        res.json(task);
 
     });
 });

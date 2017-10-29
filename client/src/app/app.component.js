@@ -17,7 +17,7 @@ AppComponent = __decorate([
         moduleId: module.id,
         selector: 'my-app',
         //template: `<h1>Hello {{name}}</h1>`,
-        templateUrl: "app.component.html",
+        templateUrl: "app.component.html"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
